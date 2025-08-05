@@ -1,0 +1,44 @@
+body {
+    background-color: #6d372a;
+    margin: 0;
+}
+
+header img {
+    height: 50px;
+    position: fixed;
+}
+
+#inicio h1 {
+    font-size: 200px
+}
+
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+    color: #4a2e1f;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: rgba(255, 255, 255, 0.856);
+}

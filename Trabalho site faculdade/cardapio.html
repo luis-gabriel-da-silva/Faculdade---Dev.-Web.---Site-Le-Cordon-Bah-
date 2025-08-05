@@ -5,10 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <style>
         html {
             background-color: #6d372a;
         }
+
+        body {
+            font-family: 'Lora', serif;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+            color: #4a2e1f;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
 
         h1,
         h2,
@@ -45,9 +74,8 @@
         #introducao h1 {
             font-size: 200px;
             text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            margin: 15px;
-            padding-top: 200px;
+            margin: 0;
+            padding-top: 185px;
         }
 
         #introducao p {
@@ -90,7 +118,7 @@
             margin: 0 auto;
         }
 
-        .cardapio {
+        .cardapios {
             text-align: center;
             font-size: 40px;
             margin: auto;
@@ -100,7 +128,9 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <a href="index.html"><img src="files/arrow_back.svg" alt=""></a>
+    </header>
     <main>
         <div id="introducao">
             <h1>Cardápio</h1>
@@ -112,10 +142,10 @@
 
 
         </div>
-        <br><br><br><br>
-        <img src="files/seta" alt="" style="display: block; margin: 0 auto; height: 200px; opacity: 0.5;">
+        <br><br><br>
+        <img src="files/seta" alt="" style="display: block; margin: 0 auto; height: 170px; opacity: 0.5;">
         <br><br><br><br><br><br><br><br><br><br><br><br>
-        <h3 class="cardapio">Sabor do Pampa</h3>
+        <h3 class="cardapios">Sabor do Pampa</h3>
 
         <div class="img-right">
             <p style="text-align: right;"><strong>Entrada</strong><br>Mini polenta cremosa com queijo colonial e
@@ -141,7 +171,7 @@
         </div>
         <br><br><br>
 
-        <h3 class="cardapio">Cordeiro & Cabernet</h3>
+        <h3 class="cardapios">Cordeiro & Cabernet</h3>
 
         <div class="img-right">
             <img src="files/entrada-cordeiro.png" alt="">
@@ -168,7 +198,7 @@
         <br>
 
 
-        <h3 class="cardapio">Menu Gaúcho de Gravata</h3>
+        <h3 class="cardapios">Menu Gaúcho de Gravata</h3>
 
         <div class="img-right">
             <p style="text-align: right;"><strong>Entrada</strong><br>Tartare de carne de sol com crocante de aipim e

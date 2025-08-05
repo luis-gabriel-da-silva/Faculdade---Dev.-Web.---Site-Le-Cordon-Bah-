@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <style>
         #celina-txt {
             display: flex;
@@ -12,6 +17,36 @@
 
         .titulos {
             text-align: center;
+        }
+
+        body {
+            background-image: url('files/fundo-index2.jpeg');
+            background-size: 100% 1080px;
+            background-position: top;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        #bah {
+            font-size: 200px;
+            font-weight: bold;
+            display: inline-block;
+            background: linear-gradient(45deg,
+                    #1dd1a1 0%, #1dd1a1 33.33%,
+                    #ff6b6b 33.33%, #ff6b6b 66.66%,
+                    #feca57 66.66%, #feca57 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            /* necessário no Chrome/Safari */
+            color: transparent;
+        }
+
+        #inicio {
+            background: linear-gradient(to bottom, #00000000 80%, #6d372a);
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+
         }
     </style>
 </head>
@@ -21,14 +56,10 @@
      bem marcante de boas vindas e dando as funcionalidades "principais": Conferir o cardápio e a parte mais importante 
      e onde se encontra os formulários, a parte de reserva de horários do restaurante.-->
     <header>
+        <div id="inicio">
 
-    </header>
-
-    <!-- A parte do main conta a história do restaurante e sobre a chef, junto a galeria de fotos do local e cozinha-->
-
-    <main>
-        <section id="inicio">
-            <h1>Le Cordon Bah!</h1>
+            <h1>Le Cordon <div id="bah">Bah!</div>
+            </h1>
             <h3>Comida refinada, com história para contar.</h3>
 
 
@@ -39,8 +70,14 @@
             <button>
                 <a href="reserva.html">Faça a sua reserva</a>
             </button>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </header>
 
-        </section>
+    <!-- A parte do main conta a história do restaurante e sobre a chef, junto a galeria de fotos do local e cozinha-->
+
+    <main>
+        <br><br><br>
         <section id="historia-lcb">
             <h3>Le Cordon Bah – Onde o tradicional é requintado ao limite.</h3>
             <p>
