@@ -5,166 +5,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
+        html {
+            background-color: #6d372a;
+        }
+
         h1,
         h2,
         h3,
         h4,
         p {
-            text-align: center;
-            display: flexbox;
-            justify-content: center;
-            max-width: 1000px;
-            margin: 10px auto;
+            color: rgba(255, 255, 255, 0.856);
         }
 
-        img {
-            width: 450px;
-            height: 450px;
-            display: flexbox;
+
+        .img-right img {
+            width: 400px;
+            height: 400px;
+            display: block;
             margin: 15px auto;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.30);
             border-radius: 12px;
-
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
-        .img-right p,
-        img {
+        .img-right {
             display: flex;
             align-items: center;
             gap: 20px;
-            height: auto;
-            max-width: 820px;
+            max-width: 860px;
             margin: 0 auto;
         }
-    </style>
 
+        .img-right p {
+            flex: 1;
+            font-size: 30px;
+            margin: 15px;
+        }
+
+        #introducao h1 {
+            font-size: 200px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 15px;
+            padding-top: 200px;
+        }
+
+        #introducao p {
+            text-align: center;
+            font-size: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .wine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 30px;
+        }
+
+        .wine {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .wine h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #5a2b1e;
+        }
+
+        .wine p {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        #vinhos {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .cardapio {
+            text-align: center;
+            font-size: 40px;
+            margin: auto;
+        }
+    </style>
 
 </head>
 
 <body>
     <header></header>
     <main>
-        <h1>Cardápio</h1>
-
-        <p>
-            No Le Cordon Bah, cada refeição é pensada como um momento especial. Unimos a tradição gaúcha ao requinte da
-            alta gastronomia para criar menus que encantam o paladar e aquecem a alma.
-
-            Nossas três opções de 3-course meals foram cuidadosamente elaboradas para celebrar sabores, texturas e
-            histórias — seja para um jantar romântico, uma comemoração em família ou simplesmente para saborear o melhor
-            da nossa cozinha.
-
-            Escolha o menu que mais combina com o seu momento e viva uma experiência inesquecível.
-        </p>
-
-        <div class="img-right">
-            <h3>Sabor do Pampa</h3>
-            <p><strong>Entrada</strong></p><br>
-            <p> <br>
-                Mini polenta cremosa com queijo colonial e cogumelos grelhados
-
-                <img src="files/entrada-pampa.png" alt=""><br>
-            </p>
-        </div>
-        <br>
-        <p> <strong>Prato principal</strong> <br> <br></p>
-        <div class="img-right">
+        <div id="introducao">
+            <h1>Cardápio</h1>
             <p>
-
-
-                <img src="files/principal-pampa.png" alt="">Entrecot Angus grelhado ao molho de vinho da campanha, purê
-                de batata baroa trufado e farofa de
-                castanhas.<br>
+                No Le Cordon Bah, <i>tradição gaúcha e alta gastronomia</i> se encontram em menus que celebram sabores e
+                momentos especiais. <br>
+                Escolha sua <b>experiência</b> e delicie-se com nossas opções cuidadosamente preparadas.
             </p>
+
+
+        </div>
+        <br><br><br><br>
+        <img src="files/seta" alt="" style="display: block; margin: 0 auto; height: 200px; opacity: 0.5;">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3 class="cardapio">Sabor do Pampa</h3>
+
+        <div class="img-right">
+            <p style="text-align: right;"><strong>Entrada</strong><br>Mini polenta cremosa com queijo colonial e
+                cogumelos grelhados</p>
+            <img src="files/entrada-pampa.png" alt="">
+        </div>
+
+        <br>
+
+        <div class="img-right">
+            <p style="text-align: right;"><strong>Prato principal</strong><br>Entrecot Angus grelhado ao molho de vinho
+                da campanha, purê de batata
+                baroa trufado e farofa de castanhas</p>
+            <img src="files/principal-pampa.png" alt="">
+        </div>
+
+        <br>
+
+        <div class="img-right">
+            <p style="text-align: right;"><strong>Sobremesa</strong><br>Pavê de doce de leite com flor de sal e telha
+                crocante de erva-mate</p>
+            <img src="files/sobremesa-pampa.png" alt="">
+        </div>
+        <br><br><br>
+
+        <h3 class="cardapio">Cordeiro & Cabernet</h3>
+
+        <div class="img-right">
+            <img src="files/entrada-cordeiro.png" alt="">
+            <p><strong>Entrada</strong><br>Salada morna de folhas amargas com brie derretido e geleia de pimenta
+                artesanal</p>
+        </div>
+
+        <br>
+
+        <div class="img-right">
+            <img src="files/principal-cordeiro.png" alt="">
+            <p><strong>Prato principal</strong><br>Filé de cordeiro ao molho de vinho tinto e hortelã, acompanhado de
+                risoto de alho-poró</p>
+        </div>
+
+        <br>
+
+        <div class="img-right">
+            <img src="files/sobremesa-cordeiro.png" alt="">
+            <p><strong>Sobremesa</strong><br>Crème brûlée de bergamota com crosta dourada</p>
         </div>
         <br>
-        <p><strong>Sobremesa</strong></p> <br>
+        <br>
+        <br>
+
+
+        <h3 class="cardapio">Menu Gaúcho de Gravata</h3>
+
         <div class="img-right">
-            <p>Pavê de doce de leite com flor de sal e telha crocante de erva-mate
-                <br>
-                <img src="files/sobremesa-pampa.png" alt=""><br>
-            </p>
+            <p style="text-align: right;"><strong>Entrada</strong><br>Tartare de carne de sol com crocante de aipim e
+                espuma de chimichurri</p>
+            <img src="files/entrada-gravata.png" alt="">
         </div>
 
+        <br>
 
+        <div class="img-right">
+            <p style="text-align: right;"><strong>Prato principal</strong><br>Peito de frango recheado com queijo
+                serrano e espinafre, servido com
+                mil-folhas de batata e molho de mostarda e mel</p>
+            <img src="files/principal-gravata.png" alt="">
+        </div>
 
-        </p>
+        <br>
 
-        <h3>Cordeiro & Cabernet</h3>
-        <p>
-            <strong>Entrada</strong> <br>
-            Salada morna de folhas amargas com brie derretido e geleia de pimenta artesanal
-            <br>
-            <img src="files/entrada-cordeiro.png" alt=""><br>
+        <div class="img-right">
+            <p style="text-align: right;"><strong>Sobremesa</strong><br>Mousse de chocolate 70% com farofa de pinhão
+                caramelizado e redução de
+                vinho doce</p>
+            <img src="files/sobremesa-gravata.png" alt="">
+        </div>
 
-            <strong>Prato Principal</strong> <br>
-            Filé de cordeiro ao molho de vinho tinto e hortelã, acompanhado de risoto de alho-poró <br>
-            <img src="files/principal-cordeiro.png" alt=""><br>
+        <hr>
+        <h2 style="text-align: center; font-size: 30px;">Vinhos para harmonização com os cardápios</h2>
 
-            <br>
-            <strong>Sobremesa</strong> <br>
-            Delicado, perfumado e com aquele toque cítrico gaúcho.
-            <br>
-            <img src="" alt=""><br>
-
-        </p>
-
-        <h3>Menu Gaúcho de Gravata</h3>
-        <p>
-            <strong>Entrada</strong> <br>
-            Tartare de carne de sol com crocante de aipim e espuma de chimichurri
-            <br>
-            <img src="files/entrada-gravata.png" alt=""><br>
-
-            <strong>Prato Principal</strong> <br>
-            Peito de frango recheado com queijo serrano e espinafre, servido com mil-folhas de batata e molho de
-            mostarda e mel
-            <br>
-
-            <img src="files/principal-gravata.png" alt=""><br>
-
-            <strong>Sobremesa</strong> <br>
-            Mousse de chocolate 70% com farofa de pinhão caramelizado e redução de vinho doce
-            <br>
-            <img src="" alt=""><br>
-
-
-        </p>
-
-
-        <h2> Harmonização A Par</h2>
-        <h3>Vinhos selecionados para elevar sua experiência</h3>
-        <p>Nossos sommeliers parceiros selecionaram rótulos especiais para acompanhar cada menu do Le Cordon Bah,
-            valorizando o equilíbrio entre sabor, aroma e tradição.</p>
-
-        <h4>Reserva da Estância – Tannat 2021 (Campanha Gaúcha)</h4>
-        <img src="files/tannat.png" alt="" style="display: block; margin: 0 auto;">
-        <p>Robusto, com taninos marcantes e notas de frutas negras e couro, o Tannat valoriza cortes nobres como o
-            entrecot e combina perfeitamente com pratos de personalidade forte. Ideal para acompanhar o sabor do pampa
-            com elegância, perfeito para harmonizar com o menu "Sabor do Pampa"</p>
-
-        <h4>Ernesto Catena – Pinot Noir 2022 (Serra Argentina)</h4>
-        <img src="files/pinot.png" alt="" style="display: block; margin: 0 auto;">
-        <p>Um dos grandes achados do vinho argentino. Este Pinot Noir é alegre e repleto de notas de frutas silvestres e
-            especiarias. Em boca a presença de frutas e especiarias se repete e o resultado é um vinho saboroso, fresco,
-            alegre e gastronômico, perfeito para harmonizar com o menu "Cordeiro & Cabernet"</p>
-
-        <h4>Berkano – Chardonnay Barricado 2023 (Vale dos Vinhedos)</h4>
-        <img src="files/chardonnay.png" alt="" style="display: block; margin: 0 auto;">
-        <p>Com corpo médio, notas de baunilha e frutas tropicais, esse Chardonnay barricado realça o sabor do frango
-            recheado e harmoniza com pratos mais cremosos. Final elegante, fresco e persistente, ótimo para harmonizaçã
-            com o menu "Gaúcho de Gravata"
-
-        </p>
-
-
-
-
-
-
+        <img src="files/vinhos.jpg" alt="" id="vinhos">
+        <section class="wine-grid">
+            <div class="wine">
+                <h4>Chardonnay Barricado</h4>
+                <p>Branco cremoso com toques de baunilha e frutas tropicais. Combina bem com frango, queijos e pratos
+                    cremosos.</p>
+            </div>
+            <div class="wine">
+                <h4>Pinot Noir</h4>
+                <p>Leve e frutado, com toques de especiarias. Ótima escolha para pratos delicados ou entradas
+                    sofisticadas.</p>
+            </div>
+            <div class="wine">
+                <h4>Tannat Reserva</h4>
+                <p>Encorpado, com notas de frutas negras e taninos firmes. Ideal para pratos intensos, como carnes
+                    vermelhas.</p>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
