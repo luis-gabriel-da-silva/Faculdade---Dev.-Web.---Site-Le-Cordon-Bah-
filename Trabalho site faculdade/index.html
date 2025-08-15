@@ -91,6 +91,34 @@
         #inicio button:hover a {
             color: white;
         }
+
+        .titulos h3 {
+            font-size: 30px;
+            font-family: fantasy;
+        }
+
+        #historia-lcb p {
+            display: flex;
+            justify-content: center;
+            max-width: 1440px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        .img-aside {
+            max-width: 1080px;
+            margin-bottom: 40px;
+        }
+
+        .img-aside p {
+            font-size: 26px;
+            text-align: left;
+        }
+
+        .img-aside img {
+            height: 700px;
+            width: auto;
+        }
     </style>
 </head>
 
@@ -105,14 +133,14 @@
             </h1>
             <h3>Comida refinada, com história para contar.</h3>
 
-
-            <button>
-                <a href="cardapio.html">Cardapio</a>
-            </button>
-
-            <button>
-                <a href="reserva.html">Faça a sua reserva</a>
-            </button>
+            <a href="cardapio.html">
+                <button>
+                    Cardápio
+                </button></a>
+            <a href="reserva.html">
+                <button>
+                    Faça a sua reserva
+                </button></a>
         </div>
     </header>
 
@@ -121,7 +149,11 @@
     <main>
         <br><br><br>
         <section id="historia-lcb">
-            <h3>Le Cordon Bah – Onde o tradicional é requintado ao limite.</h3>
+            <div class="titulos">
+                <u style="color: rgb(255, 230, 230);">
+                    <h3>Le Cordon Bah! – Onde o tradicional é requintado ao limite.</h3>
+                </u>
+            </div>
             <p>
                 No coração da serra gaúcha, nasceu o Le Cordon Bah, um restaurante onde o fogo de chão encontra a alta
                 gastronomia. Fundado em 2012 por Celina Alencar, uma chef formada na França e criada nas coxilhas do
@@ -134,10 +166,15 @@
             </p>
         </section>
 
-        <section class="titulos">
-            <h3>Chef Celina Alencar <br> Da França pro fogo de chão</h3>
-            <div id="celina-txt">
-                <img src="img/Chef Celina.png" style=" height: 300px;">
+        <section>
+            <div class="titulos">
+                <strong>
+                    <h3>Chef Celina Alencar
+                </strong>
+                <br> Da França pro fogo de chão</h3>
+            </div>
+            <div class="img-aside"">
+                <img src=" img/Chef Celina.png">
                 <p>Nascida em Bagé, criada entre panelas de ferro e cortes nobres de carne, Celina Alencar sempre soube
                     que
                     sua vocação estava entre sabores e histórias. Formada pela renomada escola Le Cordon Bleu, em Paris,
@@ -152,16 +189,47 @@
             </div>
         </section>
 
-        <!-- O Footer conta com links e itens informativos -->
-        <footer>
-            <a href="#">Contate-nos</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">FAQ</a><br>
-            <a href="#">Whatsapp</a>
-            <a href="#">Instagram</a>
-            <a href="#">Youtube</a><br>
-        </footer>
+
     </main>
+    <footer>
+        <div class="footer-container">
+            <!-- Contato -->
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>📍 Av. Bento Gonçalves, 123 – Gramado, RS</p>
+                <p>📞 <a href="tel:+5554999999999">(54) 99999-9999</a></p>
+                <p>✉ <a href="mailto:contato@lecordonbah.com">contato@lecordonbah.com</a></p>
+                <p>🕒 Seg–Dom: 11h – 23h</p>
+            </div>
+
+            <!-- Menu rápido -->
+            <div class="footer-col">
+                <h4>Menu Rápido</h4>
+                <ul>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="reserva.html">Reservas</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Galeria</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <ul class="social-icons">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Le Cordon Bah. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -13,15 +13,11 @@
         rel="stylesheet">
 
     <style>
-        html {
-            background-color: #6d372a;
-        }
-
         body {
             font-family: 'Lora', serif;
             font-size: 16px;
             line-height: 1.6;
-            padding: 20px;
+            background-color: #6d372a;
         }
 
         h1,
@@ -46,90 +42,13 @@
         p {
             color: rgba(255, 255, 255, 0.856);
         }
-
-
-        .img-right img {
-            width: 400px;
-            height: 400px;
-            display: block;
-            margin: 15px auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .img-right {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            max-width: 860px;
-            margin: 0 auto;
-        }
-
-        .img-right p {
-            flex: 1;
-            font-size: 30px;
-            margin: 15px;
-        }
-
-        #introducao h1 {
-            font-size: 200px;
-            text-align: center;
-            margin: 0;
-            padding-top: 185px;
-        }
-
-        #introducao p {
-            text-align: center;
-            font-size: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .wine-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 32px;
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 30px;
-        }
-
-        .wine {
-            background-color: #fafafa;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .wine h4 {
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-            color: #5a2b1e;
-        }
-
-        .wine p {
-            font-size: 0.95rem;
-            color: #333;
-        }
-
-        #vinhos {
-            display: block;
-            margin: 0 auto;
-        }
-
-        .cardapios {
-            text-align: center;
-            font-size: 40px;
-            margin: auto;
-        }
     </style>
 
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="img/arrow_back.svg" alt=""></a>
+        <a href="index.html"><img src="img/arrow_back.svg" alt="" style="margin: 40px;"></a>
     </header>
     <main>
         <div id="introducao">
@@ -147,7 +66,7 @@
         <br><br><br><br><br><br><br><br><br><br><br><br>
         <h3 class="cardapios">Sabor do Pampa</h3>
 
-        <div class="img-right">
+        <div class="img-aside">
             <p style="text-align: right;"><strong>Entrada</strong><br>Mini polenta cremosa com queijo colonial e
                 cogumelos grelhados</p>
             <img src="img/entrada-pampa.png" alt="">
@@ -155,7 +74,7 @@
 
         <br>
 
-        <div class="img-right">
+        <div class="img-aside">
             <p style="text-align: right;"><strong>Prato principal</strong><br>Entrecot Angus grelhado ao molho de vinho
                 da campanha, purê de batata
                 baroa trufado e farofa de castanhas</p>
@@ -164,7 +83,7 @@
 
         <br>
 
-        <div class="img-right">
+        <div class="img-aside">
             <p style="text-align: right;"><strong>Sobremesa</strong><br>Pavê de doce de leite com flor de sal e telha
                 crocante de erva-mate</p>
             <img src="img/sobremesa-pampa.png" alt="">
@@ -173,7 +92,7 @@
 
         <h3 class="cardapios">Cordeiro & Cabernet</h3>
 
-        <div class="img-right">
+        <div class="img-aside">
             <img src="img/entrada-cordeiro.png" alt="">
             <p><strong>Entrada</strong><br>Salada morna de folhas amargas com brie derretido e geleia de pimenta
                 artesanal</p>
@@ -181,7 +100,7 @@
 
         <br>
 
-        <div class="img-right">
+        <div class="img-aside">
             <img src="img/principal-cordeiro.png" alt="">
             <p><strong>Prato principal</strong><br>Filé de cordeiro ao molho de vinho tinto e hortelã, acompanhado de
                 risoto de alho-poró</p>
@@ -189,7 +108,7 @@
 
         <br>
 
-        <div class="img-right">
+        <div class="img-aside">
             <img src="img/sobremesa-cordeiro.png" alt="">
             <p><strong>Sobremesa</strong><br>Crème brûlée de bergamota com crosta dourada</p>
         </div>
@@ -200,7 +119,7 @@
 
         <h3 class="cardapios">Menu Gaúcho de Gravata</h3>
 
-        <div class="img-right">
+        <div class="img-aside">
             <p style="text-align: right;"><strong>Entrada</strong><br>Tartare de carne de sol com crocante de aipim e
                 espuma de chimichurri</p>
             <img src="img/entrada-gravata.png" alt="">
@@ -208,7 +127,7 @@
 
         <br>
 
-        <div class="img-right">
+        <div class="img-aside">
             <p style="text-align: right;"><strong>Prato principal</strong><br>Peito de frango recheado com queijo
                 serrano e espinafre, servido com
                 mil-folhas de batata e molho de mostarda e mel</p>
@@ -217,7 +136,7 @@
 
         <br>
 
-        <div class="img-right">
+        <div class="img-aside">
             <p style="text-align: right;"><strong>Sobremesa</strong><br>Mousse de chocolate 70% com farofa de pinhão
                 caramelizado e redução de
                 vinho doce</p>
@@ -246,7 +165,45 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <!-- Contato -->
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>📍 Av. Bento Gonçalves, 123 – Gramado, RS</p>
+                <p>📞 <a href="tel:+5554999999999">(54) 99999-9999</a></p>
+                <p>✉ <a href="mailto:contato@lecordonbah.com">contato@lecordonbah.com</a></p>
+                <p>🕒 Seg–Dom: 11h – 23h</p>
+            </div>
+
+            <!-- Menu rápido -->
+            <div class="footer-col">
+                <h4>Menu Rápido</h4>
+                <ul>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="reserva.html">Reservas</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Galeria</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <ul class="social-icons">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Le Cordon Bah. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
