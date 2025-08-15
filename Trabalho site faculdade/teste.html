@@ -4,35 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        .container {
-            display: flex;
-            align-items: center;
-            /* alinha verticalmente */
-            gap: 20px;
-            /* espaço entre imagem e texto */
-        }
 
-        .container img {
-            width: 200px;
-            /* ou qualquer tamanho desejado */
-            height: auto;
-        }
-
-        .container p {
-            max-width: 500px;
-        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="files/chardonnay.png" alt="Descrição da imagem">
-        <p>
-            Este é o texto que ficará ao lado da imagem. Você pode colocar o conteúdo que quiser aqui,
-            inclusive com links, títulos ou outros elementos.
-        </p>
+        <div class="row">
+            <div class="col-6 col-md-4 bg-primary text-white p-3">Coluna 1</div>
+            <div class="col-6 col-md-8 bg-success text-white p-3">Coluna 2</div>
+            <p class="text-danger">perigo</p>
+            <button class="btn btn-primary">Primário</button>
+            <button class="btn btn-success">Sucesso</button>
+            <button class="btn btn-outline-danger">Perigo</button>
+            <br><br>
+            <button class="btn btn-primary">Azul</button>
+            <button class="btn btn-outline-success">Verde</button>
+            <button class="btn btn-danger">Vermelho</button>
+            <button class="btn btn-warning">Amarelo</button>
+            <button class="btn btn-info">Ciano</button>
+            <button class="btn btn-outline-">Preto</button>
+            <button class="btn btn-light">Claro</button>
+        </div>
     </div>
+
 </body>
 
 </html>

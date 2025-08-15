@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@400;500&display=swap"
         rel="stylesheet">
 
+
     <style>
         #celina-txt {
             display: flex;
@@ -20,7 +21,7 @@
         }
 
         body {
-            background-image: url('files/fundo-index2.jpeg');
+            background-image: url('img/backgroundimg.png');
             background-size: 100% 1080px;
             background-position: top;
             background-repeat: no-repeat;
@@ -39,14 +40,56 @@
             -webkit-background-clip: text;
             /* necessário no Chrome/Safari */
             color: transparent;
+
         }
 
         #inicio {
-            background: linear-gradient(to bottom, #00000000 80%, #6d372a);
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
+            height: 100vh;
 
+        }
+
+        #inicio h3 {
+            margin: 0px;
+            padding-top: 0px;
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        #inicio h1 {
+            padding-top: 10vh;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            line-height: 1.1;
+        }
+
+        #inicio button {
+            margin: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #fff9e0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, outline-color 0.3s;
+            outline: 2px solid #fff3c5;
+            font-family: 'Quicksand', 'Lora', Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        #inicio button a {
+            color: #000;
+            text-decoration: none;
+        }
+
+
+
+        #inicio button:hover {
+            background-color: #a75446;
+        }
+
+        #inicio button:hover a {
+            color: white;
         }
     </style>
 </head>
@@ -70,7 +113,6 @@
             <button>
                 <a href="reserva.html">Faça a sua reserva</a>
             </button>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
     </header>
 
@@ -95,7 +137,7 @@
         <section class="titulos">
             <h3>Chef Celina Alencar <br> Da França pro fogo de chão</h3>
             <div id="celina-txt">
-                <img src="files/Chef Celina.png" alt="" style="height: 300px;">
+                <img src="img/Chef Celina.png" style=" height: 300px;">
                 <p>Nascida em Bagé, criada entre panelas de ferro e cortes nobres de carne, Celina Alencar sempre soube
                     que
                     sua vocação estava entre sabores e histórias. Formada pela renomada escola Le Cordon Bleu, em Paris,
