@@ -89,28 +89,83 @@
     <main>
 
         <h1 id="reserva">Reserva</h1>
-        <form action="resposta.html" method="get">
+        <form action="resposta.html" method="get" id="reserva-form">
             <div class="form-group">
                 <label>Digite o seu nome para a reserva</label>
-                <input placeholder="Nome" type="text" name="nome">
+                <input placeholder="Nome" type="text" name="nome" required>
+
                 <label>Digite o seu CPF</label>
-                <input placeholder="123.456.789-00" type="text" name="CPF">
-                <Label>Digite seu telefone para contato</Label>
-                <input placeholder="(54) 99999-9999" type="tel" name="telefone">
+                <input placeholder="000.000.000-00" type="text" name="CPF" id="cpf" maxlength="14" required>
+
+                <label>Digite seu telefone para contato</label>
+                <input placeholder="(00) 00000-0000" type="tel" name="telefone" id="telefone" maxlength="15" required>
+
                 <label>Para quantas pessoas?</label>
-                <input type="number" min="1" max="8" name="pessoas">
+                <input type="number" min="1" max="8" name="pessoas" required>
+
+                <label>Data da reserva</label>
+                <input type="date" name="data" required>
+
+                <label>Horário da reserva</label>
+                <input type="time" name="horario" id="horario" required>
+
+                <button type="submit">Fazer reserva</button>
             </div>
-
-            <div class="form-group2">
-
-                <label>Escolha a data da sua reserva</label>
-                <input type="date" name="data">
-
-                <label>Escolha o horário de sua reserva</label>
-                <input type="time" name="horario">
-            </div>
-            <button type="submit" id="enviar">Enviar</button>
         </form>
+
+        <script>
+            const form = document.getElementById('reserva-form');
+
+            // Máscara CPF
+            const cpfInput = document.getElementById('cpf');
+            cpfInput.addEventListener('input', () => {
+                let cpf = cpfInput.value.replace(/\D/g, ''); // remove tudo que não é número
+                if (cpf.length > 11) cpf = cpf.slice(0, 11);
+                cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                cpfInput.value = cpf;
+            });
+
+            // Máscara telefone
+            const telefoneInput = document.getElementById('telefone');
+            telefoneInput.addEventListener('input', () => {
+                let tel = telefoneInput.value.replace(/\D/g, '');
+                if (tel.length > 11) tel = tel.slice(0, 11);
+                tel = tel.replace(/^(\d{2})(\d)/g, '($1) $2');
+                tel = tel.replace(/(\d{5})(\d{4})$/, '$1-$2');
+                telefoneInput.value = tel;
+            });
+
+            // Verificação do horário válido
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const horario = form.elements['horario'].value;
+                const hora = parseInt(horario.split(':')[0], 10);
+
+                if (hora < 12 || hora >= 21) {
+                    alert('⚠️ Horário inválido! As reservas são permitidas das 12:00 às 21:00.');
+                    return;
+                }
+
+                // Se horário ok, salva no localStorage
+                const nome = form.elements['nome'].value;
+                const cpf = form.elements['CPF'].value;
+                const telefone = form.elements['telefone'].value;
+                const pessoas = form.elements['pessoas'].value;
+                const data = form.elements['data'].value;
+
+                localStorage.setItem('nome', nome);
+                localStorage.setItem('CPF', cpf);
+                localStorage.setItem('telefone', telefone);
+                localStorage.setItem('pessoas', pessoas);
+                localStorage.setItem('data', data);
+                localStorage.setItem('horario', horario);
+
+                window.location.href = 'resposta.html';
+            });
+        </script>
 
     </main>
     <footer>

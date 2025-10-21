@@ -21,5 +21,5 @@ O objetivo é treinar conceitos de layout, responsividade, uso de imagens, tipog
 - HTML5
 - CSS3
 - Google fonts (Playfair Display e Lora);
-
+- JavaScript
 

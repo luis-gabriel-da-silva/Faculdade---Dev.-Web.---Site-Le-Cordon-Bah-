@@ -73,14 +73,27 @@
         <h1 id="reserva">Reserva Confirmada!</h1>
 
         <div class="form-group">
-            <p>Obrigado por escolher o Le Cordon Bah! Sua reserva foi confirmada com sucesso.</p>
-            <p>Detalhes da reserva:</p>
-            <ul>
-                <li><strong>Nome:</strong> João da Silva</li>
-                <li><strong>Data:</strong> 25 de dezembro de 2025</li>
-                <li><strong>Horário:</strong> 19:00</li>
-                <li><strong>Número de pessoas:</strong> 4</li>
-            </ul>
+            <script>
+                const nome = localStorage.getItem('nome');
+                const cpf = localStorage.getItem('cpf');
+                const telefone = localStorage.getItem('telefone');
+                const pessoas = localStorage.getItem('pessoas');
+                const data = localStorage.getItem('data');
+                const horario = localStorage.getItem('horario');
+
+                if (nome && cpf && telefone && pessoas && data && horario) {
+                    document.write(`<p>Obrigado, <strong>${nome}</strong>, sua reserva foi confirmada!</p>`);
+                    document.write(`<p>Detalhes da Reserva:</p>`);
+                    document.write(`<p>CPF: <strong>${cpf}</strong></p>`);
+                    document.write(`<p>Telefone: <strong>${telefone}</strong></p>`);
+                    document.write(`<p>Número de Pessoas: <strong>${pessoas}</strong></p>`);
+                    document.write(`<p>Data: <strong>${data}</strong></p>`);
+                    document.write(`<p>Horário: <strong>${horario}</strong></p>`);
+                } else {
+                    document.write('<p>Informações invalidas. Por favor, tente novamente.</p>');
+                }
+
+            </script>
             <a href="index.html"><button>Voltar ao Início</button></a>
         </div>
     </main>

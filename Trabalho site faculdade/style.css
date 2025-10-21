@@ -192,3 +192,31 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 10px;
 }
+
+/** Seta de rolagem para baixo */
+.seta {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 30px auto 0;
+    /* centraliza e dá um espacinho */
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    transition: transform 0.3s;
+}
+
+.seta:hover {
+    transform: scale(1.2);
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
