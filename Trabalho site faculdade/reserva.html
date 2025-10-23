@@ -62,7 +62,7 @@
             font-size: 18px;
             font-weight: bold;
             background-color: #fff9e0;
-            border: none;
+            border: 1px solid #000;
             border-radius: 5px;
             cursor: pointer;
             color: #000;
@@ -71,6 +71,7 @@
             font-family: 'Quicksand', 'Lora', Arial, sans-serif;
             text-decoration: none;
             margin: 0 auto;
+
         }
 
         button:hover {
@@ -109,7 +110,9 @@
                 <label>Horário da reserva</label>
                 <input type="time" name="horario" id="horario" required>
 
-                <button type="submit">Fazer reserva</button>
+                <div style="padding-top: 20px;">
+                    <button type="submit">Fazer reserva</button>
+                </div>
             </div>
         </form>
 
