@@ -16,6 +16,12 @@ O objetivo é treinar conceitos de layout, responsividade, uso de imagens, tipog
 *Harmonização* A Par: sugestões de vinhos selecionados para acompanhar os pratos.
 *Reservas:* formulário para agendamento de mesas e horários.
 
+
+# **Principais mudanças com o JS**
+
+*Implementação do formulário funcional*: Agora o formulário possuí um local storage, retornando os dados reais no informado.
+*Interação de UX no cardápio*: A seta para baixo que antes não era funcional agora, ao clicar, o site da um scroll-down para a primeira parte do cardápio.
+
 ## Tecnologia utilizadas:
 
 - HTML5
